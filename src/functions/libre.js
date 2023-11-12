@@ -49,8 +49,8 @@ const selectData = function (entries) {
   return result;
 };
 
-const authLibreView = async function (username, password, device, setDevice) {
-  console.log('authLibreView'.blue);
+const authLibreView = async function (username, password, device, setDevice, i18n) {
+  console.log(i18n.__('authLibreView').blue);
 
   const data = {
     DeviceId: device,
@@ -67,7 +67,7 @@ const authLibreView = async function (username, password, device, setDevice) {
     }
   });
 
-  console.log('authLibreView, response', response.data.gray);
+  console.log(i18n.__('authLibreView_response'), response.data.gray);
 
   if (response.data.status !== 0) {
     return;
@@ -76,12 +76,12 @@ const authLibreView = async function (username, password, device, setDevice) {
   return response.data.result.UserToken;
 }
 
-const transferLibreView = async function (device, token, glucoseEntries, foodEntries, insulinEntries) {
-  console.log('transferLibreView'.blue);
+const transferLibreView = async function (device, token, glucoseEntries, foodEntries, insulinEntries, i18n) {
+  console.log(i18n.__('transferLibreView').blue);
 
-  console.log('glucose entries', (glucoseEntries || []).length.toString().gray);
-  console.log('food entries', (foodEntries || []).length.toString().gray);
-  console.log('insulin entries', (insulinEntries || []).length.toString().gray);
+  console.log(i18n.__('glucose_entries'), (glucoseEntries || []).length.toString().gray);
+  console.log(i18n.__('food_entries'), (foodEntries || []).length.toString().gray);
+  console.log(i18n.__('insulin_entries'), (insulinEntries || []).length.toString().gray);
 
   const glucoseSelection = selectData(glucoseEntries);
 
@@ -134,7 +134,7 @@ const transferLibreView = async function (device, token, glucoseEntries, foodEnt
     }
   });
 
-  console.log('transferLibreView, response', response.data.gray);
+  console.log(i18n.__('transferLibreView_response'), response.data.gray);
 };
 
 exports.authLibreView = authLibreView;

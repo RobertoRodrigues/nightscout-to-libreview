@@ -1,0 +1,21 @@
+{
+    "enter_nightscout_url": "Por favor, insira a sua URL do Nightscout (por exemplo, https://seu-nightscout.fly.dev)",
+    "enter_nightscout_token": "Por favor, insira o seu token do Nightscout.",
+    "enter_libreview_username": "por favor, insira seu nome de usuário do libreview",
+    "enter_libreview_password": "por favor, insira sua senha do libreview",
+    "enter_year_transfer_libreview": "por favor, insira o ano que você deseja transferir para o libreview",
+    "enter_month_transfer_libreview": "por favor, insira o mês que você deseja transferir para o libreview",
+    "recreate_device_id": "se você tiver problemas com sua transferência, recrie o ID do seu dispositivo escrevendo true",
+    "transfer_time_span": "período de transferência",
+    "libre_auth_failed": "autenticação do libre falhou!",
+    "authLibreView": "autenticação do LibreView",
+    "transferLibreView": "transferência para LibreView",
+    "glucose_entries": "entradas de glicose",
+    "food_entries": "entradas de alimentos",
+    "insulin_entries": "entradas de insulina",
+    "authLibreView_response": "autenticação do LibreView, resposta",
+    "transferLibreView_response": "transferência para LibreView, resposta",
+    "entries_url": "URL de entradas",
+    "insulin_entries_url": "URL de entradas de insulina",
+    "glucose_entries_url": "URL de entradas de glicose"
+}

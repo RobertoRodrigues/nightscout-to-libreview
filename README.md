@@ -22,8 +22,7 @@ Open command line in your favorite folder:
 cd nightscout-to-libreview
 npm start
 ```
-
-## Todo
+## ToDo
 - many many testing!
 - better error handling
 - clean up entry point
@@ -32,3 +31,25 @@ npm start
 - add notes from libreview
 - add basal insulin?!?
 - different libreview api endpoints
+
+# Transferir dados do Nightscout para o LibreView
+Transfira seus dados de diabetes do Nightscout para o LibreView.
+
+## Requisitos
+- git
+- NodeJS
+
+## Primeiro uso
+Abra a linha de comando na sua pasta favorita:
+```
+git clone https://github.com/creepymonster/nightscout-to-libreview
+cd nightscout-to-libreview
+npm install
+npm start
+## Uso futuro
+```
+Abra a linha de comando na sua pasta favorita:
+```
+cd nightscout-to-libreview
+npm start
+```
